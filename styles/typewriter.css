@@ -1,0 +1,44 @@
+.section.section_typewriter {
+  background-color: #1f2e88;
+}
+
+.section_typewriter.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.section_typewriter.typewriter {
+  font-family: sans-serif;
+  color: #fff;
+  padding-left: 30px;
+  display: block;
+}
+.section_typewriter.typewriter-text {
+  padding-right: 10px;
+  color: #ffe509;
+  border-right: solid #ffe509 7px;
+  text-transform: uppercase;
+  animation: cursor 1s ease-in-out infinite;
+  font-weight: bold;
+}
+@keyframes cursor {
+  from {
+    border-color: #ffe509;
+  }
+  to {
+    border-color: transparent;
+  }
+}
+
+@media (max-width: 767.98px) {
+  .section_typewriter.typewriter {
+    font-size: 35px;
+  }
+}
+@media (min-width: 768px) {
+  .section_typewriter.typewriter {
+    font-size: 60px;
+  }
+}

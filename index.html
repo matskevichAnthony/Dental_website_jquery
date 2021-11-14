@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css" type="text/css" />
+  <link rel="stylesheet" href="./styles/nav.css" type="text/css" />
+  <link rel="stylesheet" href="./styles/intro.css" type="text/css" />
+  <link rel="stylesheet" href="./styles/about.css" type="text/css" />
+  <link rel="stylesheet" href="./styles/services.css" type="text/css" />
+  <link rel="stylesheet" href="./styles/prices.css" type="text/css" />
+  <link rel="stylesheet" href="./styles/location.css" type="text/css" />
+  <link rel="stylesheet" href="./styles/testimonials.css" type="text/css" />
+  <link rel="stylesheet" href="./styles/typewriter.css" type="text/css" />
+  <link rel="stylesheet" href="./styles/modal.css" type="text/css" />
+  <link rel="stylesheet" href="./styles/contact.css" type="text/css" />
+  <link rel="stylesheet" href="./styles/questions.css" type="text/css" />
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://kit.fontawesome.com/b99e675b6e.js"></script>
+  <script type="module" src="/script.js"></script>
+  <script type="module" src="./data/testimonials.js"></script>
+  <script type="module" src="./data/services.js"></script>
+  <script type="module" src="./data/questions.js"></script>
+  <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6nhjY1_Ft9Z4LxyfyHglsoD7ZpO9cWl4&"></script>
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="wrapper collapse">
+
+    <div class="popup__overlay">
+      <div class="popup">
+        <div class="popup__close">X</div>
+        <h2>Our address:</h2>
+        <p>Address: 115 W 42nd St, New York, NY 10036, USA</p>
+      </div>
+    </div>
+
+    <div class="top_navbar">
+      <div class="top_menu">
+        <div class="logo">
+          BeDentist.
+        </div>
+        <ul>
+          <li><a id="popup__toggle" href="#">
+              <i class="fas fa-search"></i>
+            </a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="sidebar">
+      <ul class="sidebar items">
+        <li><a href="#intro">
+            <span class="icon"><i class="fas fa-tooth"></i></span>
+          </a></li>
+        <li><a href="#about">
+            <span class="icon"><i class="fas fa-info"></i></span>
+          </a></li>
+        <li><a href="#services">
+            <span class="icon"><i class="fas fa-blog"></i></i></span>
+          </a></li>
+          <li><a href="#prices">
+            <span class="icon"><i class="fas fa-dollar-sign"></i></span>
+          </a></li>
+        <li><a href="#typewriter">
+            <span class="icon"><i class="fas fa-leaf"></i></span>
+          </a></li>
+        <li><a href="#testimonials">
+            <span class="icon"><i class="fas fa-users"></i></span>
+          </a></li>
+        <li><a href="#qa">
+            <span class="icon"><i class="fas fa-question-circle"></i></span>
+          </a></li>
+        <li><a href="#contact">
+            <span class="icon"><i class="fas fa-phone-square-alt"></i></span>
+          </a></li>
+        <li><a href="#map">
+            <span class="icon"><i class="fas fa-map-pin"></i></span>
+          </a></li>
+      </ul>
+    </div>
+    
+    <div class="main_container">
+      <section id="intro" class="section section_intro">
+        <h1 class="h1 h1_intro_sentense">Make your smile shine!</h1>
+        <p class="p p_intro_description"> We are delighted to offer you the variety of services to make your smile
+          brighter!</p>
+        <a href="#contact" class="a button_appointment">MAKE AN APOINTMENT</a>
+      </section>
+      <section id="about" class="section section_about">
+
+        <div class="wrapper_about">
+
+          <div class="div upper_section">
+            <h1 class="h1 about_title">About <br />BeDentist.</h1>
+            <img src="/assets/images/v3_2.png" alt="" class="img about_image" />
+          </div>
+          <div class="div lower_section">
+            <div class="div bold_title_wrapper">
+              <p class="p bold_title">Our Clinic is made for you to be smiling all the time.</p>
+              <span class="span line-title"></span>
+            </div>
+            <p class="p light_text">Our clinic was was established in 1995 by John Smith. The
+              team at Clinica Dental Tenerife Sur believes in providing high quality care in a relaxed and
+              friendly environment. We understand, traditionally, that a visit to the dentist has not been a
+              memorable or fun one, but we will ensure that it is a stress-free and pain-free experience for
+              you.</p>
+
+          </div>
+
+        </div>
+
+      </section>
+      <section id="services" class="section section_services">
+
+        <div id="service_window" class="div services_window">
+          <h2 id="services_title" class="h2 services_title">Medical help</h2>
+          <p id="services_description" class="p services_description">We can prescribe you all necessary medecine</p>
+          <button id="next_services" class="button next_services">next</button>
+        </div>
+
+
+      </section>
+      <section id="prices" class="section section_prices">
+        <div class="card-div">
+          <div class="card">
+            <h2 class="card-header">Consultation</h2>
+            <p class="card-pricing">Free!<span class="recurring">for first session</span></p>
+
+            
+          </div>
+          <div class="card">
+            <h2 class="card-header">Cleaning</h2>
+            <p class="card-pricing">$50<span class="recurring">per cleaning</span></p>
+
+           
+          </div>
+          <div class="card">
+            <h2 class="card-header">Braces</h2>
+            <p class="card-pricing">$1000+<span class="recurring">per set</span></p>
+            
+          </div>
+        </div>
+      </section>
+      <section id="typewriter" class="section section_typewriter">
+
+        <div class='section_typewriter container'>
+          <p class='section_typewriter typewriter'>Our clinic is
+            <span class='section_typewriter typewriter-text' data-text='[ "the best. ", "the cheapest. ", "the fastest. " ]'></span>
+          </p>
+        </div>
+
+      </section>
+      <section id="testimonials" class="section section_testimonials">
+        <div class="section_testimonials slider_wrapper">
+          <div class="section_testimonials slide-wrap">
+            <div class="section_testimonials slide-mask">
+              <ul class="section_testimonials slide-group">
+                <!-- Сгенерированы в jquery -->
+              </ul>
+            </div>
+          </div>
+
+          <div class="section_testimonials slide-nav">
+            <ul>
+              <!-- Сгенерированы в jquery -->
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="qa" class="section section_qa">
+
+        <!-- Сгенерированы в jquery -->
+
+      </section>
+      <section id="contact" class="section section_contact">
+
+        <div class="section_contact title_section">
+          <h2 class="section_contact contact_title">Contact us!</h2>
+        </div>
+        <div id="two" class="section_contact contact_section">
+
+          <form class="section_contact form_contact">
+            <div class="section_contact pageTitle">Sign Up </div>
+            <div class="section_contact secondaryTitle">Please fill this form to sign up.</div>
+            <input type="text" class="section_contact formEntry name" placeholder="Name" />
+            <input type="text" class="section_contact formEntry email" placeholder="Email" />
+            <textarea class="section_contact formEntry message" placeholder="Message"></textarea>
+            <input type="checkbox" class="section_contact termsConditions" value="Term">
+            <label style="color: grey" for="terms"> I Accept the <span style="color: #0e3721">Terms of Use</span> &
+              <span style="color: #0e3721">Privacy Policy</span>.</label><br>
+            <button class="section_contact submit" onclick="thanks()">Submit</button>
+          </form>
+
+        </div>
+
+      </section>
+      <section id="#location" class="section section_location">
+        <h2 class="section_location location_title">Our location!</h2>
+        <div id="map" class="section_location map"></div>
+      </section>
+    </div>
+</body>
+
+</html>

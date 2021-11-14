@@ -1,0 +1,101 @@
+.section.section_testimonials {
+  background-image: url("../assets/images/section_bg.webp");
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+.section_testimonials.slide-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.section_testimonials.slide-mask {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  height: 30rem;
+  width: 50rem;
+}
+.section_testimonials.slide-group {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.section_testimonials.slide {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 30rem;
+  width: 100%;
+  font: 100 90px/135px "lato";
+  font-size: 2em;
+  color: #1f2e88;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.section_testimonials.slider_wrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.section_testimonials.photo {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  background: cornflowerblue;
+  background-size: cover;
+}
+
+.section_testimonials.testimonial_name {
+  margin-top: -2.5rem;
+  font-size: 1rem;
+}
+
+.section_testimonials.slide-nav {
+  text-align: center;
+}
+.section_testimonials.slide-nav ul {
+  margin: 0;
+  padding: 0;
+}
+.section_testimonials.slide-nav li {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background: #1f2e88;
+  cursor: pointer;
+  margin-left: 0.5em;
+  margin-top: 2rem;
+}
+.section_testimonials.slide-nav li.current {
+  background: #1f2e88;
+}
+
+@media (max-width: 480px) {
+  .section_testimonials.slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 30rem;
+    width: 100%;
+    font: 100 90px/135px "lato";
+    font-size: 2em;
+    color: #1f2e88;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 1rem;
+  }
+}

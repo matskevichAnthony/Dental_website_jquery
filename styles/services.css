@@ -1,0 +1,52 @@
+.section.section_services {
+  background-color: #1f2e88;
+  background-image: url("../assets/images/section_bg.webp");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.div.services_window {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background: whitesmoke;
+  width: 50rem;
+  height: 50rem;
+}
+
+.h2.services_title {
+  color: #1f2e88;
+  font-size: 3rem;
+}
+
+.p.services_description {
+  margin-top: 1rem;
+  font-size: 1rem;
+}
+
+.button.next_services {
+  width: 7.5rem;
+  height: 5rem;
+  margin-top: 1rem;
+  background: #1f2e88;
+  font-size: 1.5rem;
+  color: whitesmoke;
+  border-radius: 3%;
+  border: none;
+  transition: all 0.5s linear;
+  cursor: pointer;
+}
+
+.button.next_services:hover {
+  background: whitesmoke;
+  border: 1px solid #1b297a;
+  color: #1b297a;
+}
+
+@media (max-width: 480px) {
+  .p.services_description {
+    text-align: center;
+  }
+}

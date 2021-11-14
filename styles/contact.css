@@ -1,0 +1,133 @@
+.section.section_contact {
+  background-color: whitesmoke;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section_contact.title_section {
+  height: 100vh;
+  width: 100%;
+  background: whitesmoke;
+  background-image: url("../assets/images/section_bg.webp");
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.section_contact.title_section h2 {
+  color: #1f2e88;
+}
+
+.section_contact.contact_section {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: whitesmoke;
+  text-align: center;
+}
+
+.section_contact.form_contact {
+  background: #fff;
+  box-shadow: 0 30px 60px 0 rgba(24, 108, 211, 0.4);
+  border-radius: 5px;
+  width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  left: 0;
+  right: 0;
+  border-top: 5px solid #1f2e88;
+  animation: bounce 1.5s infinite;
+}
+
+.section_contact.title {
+  display: block;
+  font-family: sans-serif;
+  margin: 10px auto 5px;
+  width: 300px;
+}
+.section_contact.termsConditions {
+  margin: 0 auto 5px 80px;
+}
+
+.section_contact.pageTitle {
+  font-size: 2em;
+  font-weight: bold;
+}
+.section_contact.secondaryTitle {
+  color: grey;
+}
+
+.section_contact.name {
+  background-color: #ebebeb;
+  color: white;
+}
+.section_contact.name:hover {
+  border-bottom: 5px solid #1f2e88;
+  height: 30px;
+  width: 380px;
+  transition: ease 0.5s;
+}
+
+.section_contact.email {
+  background-color: #ebebeb;
+  height: 2em;
+}
+
+.section_contact.email:hover {
+  border-bottom: 5px solid #1f2e88;
+  height: 30px;
+  width: 380px;
+  transition: ease 0.5s;
+}
+
+.section_contact.message {
+  background-color: #ebebeb;
+  overflow: hidden;
+  height: 10rem;
+}
+
+.section_contact.message:hover {
+  border-bottom: 5px solid #1f2e88;
+  height: 12em;
+  width: 380px;
+  transition: ease 0.5s;
+}
+
+.section_contact.formEntry {
+  display: block;
+  margin: 2rem auto;
+  min-width: 18.75rem;
+  padding: 10px;
+  border-radius: 2px;
+  border: none;
+  transition: all 0.5s ease 0s;
+}
+
+.section_contact.submit {
+  margin-top: 2rem;
+  margin-bottom: 1rem;
+  width: 12.5rem;
+  color: white;
+  background-color: #1f2e88;
+  font-size: 20px;
+}
+
+.section_contact.submit:hover {
+  box-shadow: 15px 15px 15px 5px #1f2e88;
+  transform: translateY(-3px);
+  width: 300px;
+  border-top: 5px solid #1f2e88;
+  border-radius: 0%;
+}
+
+@media (max-width: 480px) {
+  .section_contact.title_section {
+    display: none;
+  }
+}

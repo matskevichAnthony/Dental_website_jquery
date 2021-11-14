@@ -1,0 +1,43 @@
+.section {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  background-color: aqua;
+}
+
+.section.section_intro {
+  background: linear-gradient(to top, #3204fdba, #2143ffcc),
+    url("../assets/images/intro_background.jpg");
+  background-size: cover;
+  object-fit: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: whitesmoke;
+}
+
+p.p_intro_description {
+  padding: 3rem;
+}
+
+.a.button_appointment {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 8rem;
+  height: 8rem;
+  border: none;
+  background: whitesmoke;
+  border-radius: 50%;
+  transition: all 0.3s linear;
+  cursor: pointer;
+}
+
+.a.button_appointment:hover {
+  background: #1f2e88;
+  color: whitesmoke;
+}
